@@ -87,6 +87,18 @@ KUBEWARDEN_DEVELOPMENT_MODE=1 \
   make run
 ```
 
+#### Running with kubernetes enabled docker desktop
+
+You can follow this [documentation](https://docs.docker.com/desktop/kubernetes/#enable-kubernetes) to enable kubernetes in docker desktop
+
+```console
+KUBEWARDEN_DEVELOPMENT_MODE=1 \
+  WEBHOOK_HOST_LISTEN=0.0.0.0 \
+  WEBHOOK_HOST_ADVERTISE=kubernetes.docker.internal \
+  make run
+```
+
+
 ## Tagging a new release
 
 ### Make sure CRD docs are updated:
